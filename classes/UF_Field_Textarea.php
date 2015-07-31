@@ -49,14 +49,16 @@ class UF_Field_Textarea extends UF_Field {
 	 * @return string The content to be shown in the editor.
 	 */
 	public function process_value( $value, $data ) {
-		if( isset( $data[ 'output_apply_shortcodes' ] ) && $data[ 'output_apply_shortcodes' ] ) {
-			$value = do_shortcode( $value );
-		}
+
+		$value = convert_chars( wptexturize( $value ) );
 
 		if( isset( $data[ 'output_add_paragraphs' ] ) && $data[ 'output_add_paragraphs' ] ) {
 			$value = wpautop( $value );
 		}
 
+		if( isset( $data[ 'output_apply_shortcodes' ] ) && $data[ 'output_apply_shortcodes' ] ) {
+			$value = do_shortcode( shortcode_unautop( $value ) );
+		}
 		return $value;
 	}
 }
