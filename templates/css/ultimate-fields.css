@@ -1,0 +1,241 @@
+/**
+ * Global Field Styles
+ */
+
+ /** Base Styles that apply to everything. */
+.uf-wrap .cl { height: 0; clear: both; width: 100%; font-size: 0; line-height: 0; text-indent: -4000px; }
+.uf-wrap .clearfix:after { content: ''; width: 100%; clear: both; height: 0; text-indent: -4000px; }
+
+/** Error Message */
+.uf-wrap .error-msg { display: none; }
+.uf-wrap .error-msg span { display: block; padding: 5px; }
+
+/** AJAX Loader */
+.uf-wrap .ajax-loader { background-image: url(images/ajax-loader.gif); background-position: center; background-repeat: no-repeat; width: 73px; }
+.uf-wrap .ajax-loader { height: 31px; z-index: 100; }
+.uf-wrap .ajax-loader { position: fixed; top: -50px; left: 50%; transition: top .3s; -moz-transition: top .3s; -webkit-transition: top .3s; -o-transition: top .3s; }
+.uf-wrap .ajax-loader.loading { top: 50%; }
+
+/** Tabs */
+.uf-wrap .nav-tab.invalid { color: red; }
+.uf-wrap .nav-tab .icon img { max-width: 20px; max-height: 20px; display: inline-block; vertical-align: middle; }
+.uf-wrap .nav-tab .icon img { position: relative; top: -2px; }
+.uf-wrap .tab { padding: 0; }
+.uf-wrap .inactive-tab { position: absolute; top: -4000px; left: -4000px; width: 100%; }
+
+/** Notices */
+.uf-error { display: none; }
+
+/**********************************************************************************
+*** Section: Base Field Classes
+***********************************************************************************/
+.uf-field > th { position: relative; z-index: 2; width: 20%; }
+.uf-field > td { position: relative; z-index: 1; }
+.uf-field > td.no-label { padding-left: 0; }
+
+/** Error Classes */
+.uf-field.required.invalid > td { background: rgb(255, 203, 203); }
+
+/** Help Popups */
+.uf-field .help { color: #fff; cursor: pointer; height: 19px; line-height: 19px; text-align: center; width: 19px; display: inline-block; margin-left: 5px; }
+.uf-field .help { font-weight: normal; font-size: 12px; position: relative; }
+.uf-field .help em { position: absolute; top: -4px; left: 24px; border: 1px solid #000; line-height: 19px; color: #fff; font-style: normal; padding: 3px 7px; }
+.uf-field .help em { white-space: nowrap; display: none; }
+.uf-field .help em del { position: absolute; top: 7px; left: -5px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.uf-field .help em del { border-right: 5px solid #000; }
+.uf-field .help:hover em { display: block; }
+
+/** Input styles that apply for all inputs */
+.uf-field input[type='text'],
+.uf-field textarea,
+.uf-field select { width: 99.5%; }
+.uf-field textarea { max-width: 99.5%; }
+.uf-field p.description { padding-top: 3px; margin-bottom:0; clear: both; }
+
+/** Multilingual Switcher */
+.uf-lang-wrap { position: relative; }
+.uf-lang-switch { position: absolute; top: 16px; right: 0; padding: 0; margin: 0; }
+.uf-lang-switch li { float: left; padding-right: 3px; margin: 0; }
+.uf-lang-switch li a img { display: block; opacity: 0.5; }
+.uf-lang-switch li a.active img,
+.uf-lang-switch li a:hover img { opacity: 1; }
+.uf-lang-switch li a.active img { box-shadow: 1px 1px 2px inset rgba(0,0,0,0.3); }
+.uf-lang-wrap .lang-input { margin: -10px 0; padding: 10px 0; }
+.uf-lang-wrap .lang-input.invisible { width: 100%; position:absolute; top:-5000px; left:-5000px; }
+
+/** Tabs on options pages and etc. */
+.uf-wrap h2.nav-tab-wrapper span.icon { margin-right: 5px; position: relative; top: 2px; }
+
+/**********************************************************************************
+*** Section: Post Meta Container
+***********************************************************************************/
+
+/** Tabs in post meta */
+.uf-postmeta { position: relative; height: 100%; }
+.postbox .uf-postmeta.tabs { padding-left: 169px; background: #f1f1f1; margin: -5px -11px -11px -11px; overflow: hidden; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper { float: left; width: 169px; margin: 0 0 0 -169px; z-index: 2; position: relative; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab { display: block; border: 0; margin: 0; background: transparent; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab { border-top: 1px solid transparent; border-bottom: 1px solid transparent; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab { line-height: 18px; font-size: 14px; padding: 10px 14px; border-width: 1px 0; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab:first-child { border-top: 0; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab:hover { background: none transparent !important; color: #000; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab-active:hover,
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab-active { background: #f8f8f8 !important; border-color: #dfdfdf; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab strong { font-weight: normal; }
+.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab .icon { display: inline-block; margin-right: 5px; margin-left: -5px; }
+/*.postbox .uf-postmeta.tabs .nav-tab-wrapper .submitbox { margin-top: 5px; border-top: 1px solid #dfdfdf; text-align: center; }*/
+.postbox .uf-postmeta.tabs .nav-tab-wrapper .submitbox input { margin: 15px 5px 5px; }
+.postbox .uf-postmeta.tabs .tab-border { position: absolute; top: 0; bottom: 0; left: 168px; border-right: 1px solid #dfdfdf; z-index: 1;}
+.postbox .uf-postmeta.tabs .right-tabs { overflow: hidden; background: #f8f8f8; padding-left: 20px; }
+
+/** Post Meta in Sidebar */
+#side-sortables .uf-wrap .form-table { -moz-box-sizing: border-box; box-sizing: border-box; }
+#side-sortables .uf-wrap .form-table > tbody > tr > th,
+#side-sortables .uf-wrap .form-table > tr > th,
+#side-sortables .uf-wrap .form-table > tbody > tr > td,
+#side-sortables .uf-wrap .form-table > tr > td { display: block; width: auto; vertical-align: middle; }
+#side-sortables .uf-wrap .form-table > tbody > tr > th,
+#side-sortables .uf-wrap .form-table > tr > th { padding-top: 10px; padding-bottom: 0; border-bottom: 0; }
+#side-sortables .uf-wrap .form-table > tbody > tr > td,
+#side-sortables .uf-wrap .form-table > tr > td { padding-top: 8px; padding-left: 0; }
+#side-sortables .uf-wrap .form-table > tr > th label { font-size: 14px; }
+
+/**********************************************************************************
+*** Section: Repeater Styles
+***********************************************************************************/
+
+/** The main section with fields and their rows */
+.uf-repeater .fields { position: relative; min-height: 41px; margin-bottom: 10px; }
+.uf-repeater .uf-row.ui-sortable-placeholder,
+.uf-repeater .uf-row { margin: 0 0 10px; padding: 0 !important; position: relative; z-index: 3; float: left; }
+.uf-repeater .uf-row.ui-draggable,
+.uf-repeater .fields .uf-row { float: none; width: auto; }
+.uf-repeater .fields .uf-row.ui-draggable { width: 250px; }
+.uf-repeater .fields .uf-row.invalid-row { border-color: red; }
+.uf-repeater .fields .uf-row.ui-draggable { transition: width .2s; -moz-transition: width .2s; -webkit-transition: width .2s; -o-transition: width .2s;	}
+.uf-repeater .fields .uf-row.ready { width: 100%; margin-right: -1px; margin-left: -1px; box-shadow: 0 0 7px rgba(0,0,0,0.22); }
+.uf-repeater .fields .uf-row.ready { -webkit-transition: box-shadow .2s linear; -o-transition: box-shadow .2s linear; -moz-transition: box-shadow .2s linear; }
+.uf-repeater .fields .uf-row.ready { -ms-transition: box-shadow .2s linear; transition: box-shadow .2s linear; }
+.uf-repeater .fields .uf-row.ready.closed { box-shadow: none; }
+.uf-repeater .fields .uf-row.ui-sortable-placeholder { background: #fcfcfc; border: 1px dashed #ccc; visibility: visible !important; }
+
+/** The row's handle and buttons inside of it */
+.uf-repeater .uf-row h3 em { font-style: normal; }
+.uf-repeater .uf-row h3 span { font-style:italic; opacity: 0.7; }
+.uf-repeater .delete-row { cursor: pointer;	float: right; padding: 8px 10px; color: #444; }
+.uf-repeater .uf-row:hover .delete-row { opacity: 0.7; filter: alpha(opacity=70); }
+.uf-repeater .uf-row:hover .delete-row:hover { opacity: 1; filter:alpha(opacity=100); }
+.uf-repeater .add-row { cursor: pointer; float: right; display:none; line-height: 35px; opacity: 0.8; filter: alpha(opacity=80); padding: 0 3px; }
+.uf-repeater .add-row:before { content: '\f105'; font: normal 20px/35px 'dashicons'; speak: none; -webkit-font-smoothing: antialiased;}
+.uf-repeater .fields .add-row { display: none; }
+
+/** Single-item placeholder */
+.uf-repeater .placeholder { position: absolute; top: 0; left: 0; right: 0; background: #eee; padding: 8px; border: 1px solid #ccc; margin-bottom: 10px; z-index: 2; }
+.uf-repeater .placeholder p { margin: 0; }
+
+/** Multiple-item placeholder */
+.uf-repeater h4.drag-n-drop { margin:0 0 10px; }
+.uf-repeater h4.drag-n-drop span { color: #777; }
+
+/** The inside of the box */
+.uf-repeater .uf-row .uf-inside { padding-left: 20px; }
+.uf-repeater .uf-row.closed .uf-inside { position: absolute; top: -4000px; left: -4000px; }
+
+/** Prototypes Section */
+.uf-repeater .prototypes { overflow: hidden; }
+.uf-repeater .prototypes .metabox-wrap { float: left; width: 257px; margin: 0 10px 10px 0; }
+.uf-repeater .prototypes .metabox-wrap p { padding: 3px 6px 10px; margin: 0; color: #666; }
+.uf-repeater .prototypes .uf-row h3.hndle em { display: none; }
+.uf-repeater .prototypes .uf-row.closed .add-row { display: block; }
+.uf-repeater .prototypes .uf-row.closed:hover .add-row { opacity: 1; filter: alpha(opacity=100); }
+.uf-repeater .prototypes .uf-row { margin: 0; float: none; }
+.uf-repeater .prototypes .uf-row .btn { display: none; }
+
+/**********************************************************************************
+*** Section: Field-Specific Styles
+***********************************************************************************/
+
+/** Separator Field */
+.uf-separator td { padding-left: 0; padding-right: 0; }
+.uf-separator .postbox { margin-bottom: 5px; }
+.uf-separator .metabox-holder { padding-top: 0 !important; }
+.uf-separator .metabox-holder h3 { border-bottom: 0; cursor: default; }
+.uf-separator p { padding: 10px 10px 0; }
+
+/** HTML Field */
+.uf-html .updated { margin-left: -10px !important; border-left: 4px solid #0074a2; }
+.uf-html .updated h2 { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+/** Separator field in meta boxes */
+.postbox .uf-separator .postbox { margin-left: -15px; margin-right: -33px; padding-left: 12px; }
+.postbox .tabs .uf-separator .postbox { margin-left: -21px; }
+.tab .postbox .uf-separator .postbox { margin-right: 16px; margin-left: 0; }
+
+/** Radio & Set Fields */
+.uf-field-set label,
+.uf-field-radio label { display: block; line-height: 1.7em; }
+
+/** Set Field */
+.uf-field-set[data-sortable='1'] { padding: 3px 0; }
+.uf-field-set[data-sortable='1'] label { cursor: move; display: block; padding: 4px 4px; margin: 0 -4px; position: relative; line-height: 16px; }
+.uf-field-set[data-sortable='1'] label:hover { background: #ddd; }
+.uf-field-set[data-sortable='1'] label input { vertical-align: middle; }
+
+/** RIchtect field */
+.uf-field-richtext .field-wrap > div { overflow: hidden; }
+
+/** File Field */
+.uf-field-file .field-wrap { overflow: hidden; position:relative; min-height:28px; }
+.uf-field-file .buttons { float:left; padding-top: 3px; }
+.uf-field-file a.button-primary,
+.uf-field-file a.uf-remove-image { float:left; margin-right:5px; }
+.uf-field-file .uf-file-preview { line-height: 22px; }
+.uf-field-file .uf-file-preview img { float: left; margin-right: 5px; width: auto; height: 22px; }
+
+/**********************************************************************************
+*** Section: Common Elements
+***********************************************************************************/
+
+/** Media popup hidden elements */
+.media-button-insert .uf-use-button,
+.media-modal.uf-media-modal .media-button-insert .def,
+.media-modal.uf-media-modal .attachment-display-settings,
+.media-modal.uf-media-modal .media-frame-menu,
+.media-modal.uf-media-modal .media-selection { display:none; }
+.media-modal.uf-media-modal .media-button-insert .uf-use-button { display:block; }
+.media-modal.uf-media-modal .media-frame > div { left:0; }
+
+/**********************************************************************************
+*** Section: Admin Ultimate Fields Section
+***********************************************************************************/
+
+/** Hide the posts filter in the admin */
+.icon32-posts-ultimatefields ~ form > .tablenav.top { display: none; }
+.icon32-posts-ultimatefields ~ form #post-body-content { display: none; }
+
+/** Change the export page a bit */
+.uf-export { width: 100%; box-sizing: border-box; height: 521px; background: #eee; border: 1px solid #ccc; overflow: auto; margin: 0; }
+
+
+/**********************************************************************************
+*** Section: Responsive Elements
+***********************************************************************************/
+
+@media screen and (max-width: 782px) {
+	/** Post meta tabs */
+	.postbox .uf-postmeta.tabs { padding-left: 30px; }
+	.postbox .uf-postmeta.tabs .nav-tab-wrapper { margin-left: -28px; width: 28px; }
+	.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab { padding: 10px 0; text-align: center; }
+	.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab strong { display: none; }
+	.postbox .uf-postmeta.tabs .nav-tab-wrapper a.nav-tab .icon { font-size: 14px; margin-right: 0; margin-left: 0; }
+	.postbox .uf-postmeta.tabs .tab-border { left: 29px; }
+
+	/** Repeater buttons should be higher */
+	.uf-repeater .add-row,
+	.uf-repeater .add-row:before { line-height: 40px; height: 38px; overflow: hidden; }
+	.uf-repeater .delete-row { line-height: 26px; }
+
+	/** Increase the line height of labels */
+	.uf-field-set label,
+	.uf-field-radio label { display: block; line-height: 2.5em; }
+}

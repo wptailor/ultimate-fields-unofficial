@@ -1,0 +1,1160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Fields\n"
+"POT-Creation-Date: 2014-03-31 21:47+0100\n"
+"PO-Revision-Date: 2014-03-31 21:47+0100\n"
+"Last-Translator: Radoslav Georgiev <rageorgiev@gmail.com>\n"
+"Language-Team: André R. Kohl <code@sixtyseven.info>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Tranufer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/UF_Datastore_Getter.php:53 ../classes/UF_Datastore_Getter.php:56
+msgid "Invalid type argument provided to get_uf!"
+msgstr "Ungültiges Argument &quot;type&quot; an die Funktion get_uf übergeben!"
+
+#: ../classes/UF_Datastore_Options.php:96
+#, php-format
+msgid "Error: Trying to register an option field with the %s key twice!"
+msgstr ""
+"Fehler: Versuch, ein Optionsfeld mit dem Schlüssel %s zweimal zu "
+"registrieren!"
+
+#: ../classes/UF_Datastore_Postmeta.php:61
+#, php-format
+msgid "Error: Trying to register a post meta field with the %s key twice!"
+msgstr ""
+"Fehler: Versuch, ein Post-Meta Feld mit dem Schlüssel %s zweimal zu "
+"registrieren!"
+
+#: ../classes/UF_Field.php:443
+#, php-format
+msgid ""
+"<strong>Ultimate Fields:</strong> A \"%s\" field class does not exist. The "
+"reason for this could be a missing or deactivated plugin. If you can&apos;t "
+"solve the issue, you might want to contact the author of the last theme or "
+"plugin that you either activated or updated."
+msgstr ""
+"<strong>Ultimate Fields:</strong> Eine \"%s\" Feldklasse existiert nicht. "
+"Der Grund hierfür könnte ein fehlendes order deaktiviertes Plugin sein. Wenn "
+"Sie dieses Problem nicht lösen können, sollten Sie mit dem Autoren des "
+"letzten Themes oder Plugins, dass Sie entweder aktiviert oder aktualisiert "
+"haben, Kontakt aufnehmen."
+
+#: ../classes/UF_Field.php:460
+msgid ""
+"This value will be automatically populated when the field is initially shown."
+msgstr ""
+"Dieser Wert wird automatisch im Feld verwendet, wenn es das erste mal "
+"angezeigt wird."
+
+#: ../classes/UF_Field.php:472
+msgid "Field Title"
+msgstr "Feld Titel"
+
+#: ../classes/UF_Field.php:473
+msgid "This name will appear as a label next to the field."
+msgstr "Dieser Name wird als Label neben dem Feld ausgegeben."
+
+#: ../classes/UF_Field.php:478
+msgid "Field ID (key)"
+msgstr "Feld-ID (Schlüssel)"
+
+#: ../classes/UF_Field.php:479
+msgid "You will be able to get the field's value using this ID"
+msgstr "Sie können den Wert dieses Feldes mithilfe dieser ID ausgeben"
+
+#: ../classes/UF_Field.php:483 ../classes/UF_Field_Separator.php:26
+#: ../settings/interface/meta.php:110
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../classes/UF_Field.php:485
+msgid "The description would appear after the field, just like this one."
+msgstr ""
+"Die Beschreibung wird nach dem Feld ausgegeben, genauso wie diese hier."
+
+#: ../classes/UF_Field.php:495
+msgid "Multilingual"
+msgstr "Mehrsprachigkeit"
+
+#: ../classes/UF_Field.php:496
+msgid "Enable multilingual functionality"
+msgstr "Multilungual-Funktion aktivieren"
+
+#: ../classes/UF_Field.php:497
+msgid ""
+"If enabled, Ultimate Fields will automatically display fields for each "
+"language."
+msgstr ""
+"Fals diese Option aktiviert ist, stellt Ultimate Fields automatisch Felder "
+"für jede verwendete Sprache dar."
+
+#: ../classes/UF_Field.php:502 ../classes/UF_Field.php:509
+msgid "Default Value"
+msgstr "Standardwert"
+
+#: ../classes/UF_Field_Checkbox.php:2
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: ../classes/UF_Field_Checkbox.php:15 ../classes/UF_Field_Checkbox.php:58
+msgid "Yes"
+msgstr "Ja"
+
+#: ../classes/UF_Field_Checkbox.php:46
+msgid "Displays a single checkbox. Useful for toggling functionality."
+msgstr "Zeigt eine einzelne Checkbox, nützlich z.B. für Toggle-Funktionalität"
+
+#: ../classes/UF_Field_Checkbox.php:56 ../classes/UF_Field_Text.php:2
+msgid "Text"
+msgstr "Text"
+
+#: ../classes/UF_Field_Checkbox.php:57
+msgid ""
+"This text could appear next to the checkbox itself, ex. &quot;Enable&quot;"
+msgstr ""
+"Dieser Text kann direkt neben der Checkbox erscheinen, z.B. &quot;"
+"Aktivieren&quot;"
+
+#: ../classes/UF_Field_File.php:11
+msgid "File"
+msgstr "Datei"
+
+#: ../classes/UF_Field_File.php:26 ../classes/UF_Field_Select.php:2
+msgid "Select"
+msgstr "Auswählen"
+
+#: ../classes/UF_Field_File.php:27
+msgid "Remove"
+msgstr "Entfernen"
+
+#: ../classes/UF_Field_File.php:28
+msgid "Are you sure you want to remove this file?"
+msgstr "Sind Sie sicher, dass Sie diese Datei entfernen wollen?"
+
+#: ../classes/UF_Field_File.php:29 ../common/common.php:30
+msgid "Save & Use"
+msgstr "Speichern & Verwenden"
+
+#: ../classes/UF_Field_File.php:116
+msgid "View"
+msgstr "Anzeigen"
+
+#: ../classes/UF_Field_File.php:119 ../templates/repeater/repeater-row.php:13
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../classes/UF_Field_File.php:129
+msgid "Enables uploading and chosing any file through the media uploader."
+msgstr ""
+"Ermöglicht Upload und Auswahl einer Datei durch den WordPress Media Uploader"
+
+#: ../classes/UF_Field_File.php:139 ../classes/UF_Field_Select.php:122
+#: ../classes/UF_Field_Select_Page.php:46
+#: ../classes/UF_Field_Select_Term.php:70 ../classes/UF_Field_Set.php:149
+#: ../classes/UF_Field_Text.php:42 ../classes/UF_Field_Textarea.php:34
+msgid "Output Settings"
+msgstr "Ausgabeeinstellungen"
+
+#: ../classes/UF_Field_File.php:140 ../classes/UF_Field_Select.php:123
+#: ../classes/UF_Field_Select_Page.php:47
+#: ../classes/UF_Field_Select_Term.php:71 ../classes/UF_Field_Set.php:150
+#: ../classes/UF_Field_Text.php:43 ../classes/UF_Field_Textarea.php:35
+msgid ""
+"The following settings will affect the output of this field when using the "
+"&quot;uf&quot; function or shortcode."
+msgstr ""
+"Die folgenden Einstellungen betreffen die Ausgabe dieses Feldes, wenn die "
+"&quot;uf&quot; Function oder der enstprechende Shortcode verwendet wird."
+
+#: ../classes/UF_Field_File.php:141 ../classes/UF_Field_Select_Page.php:48
+#: ../classes/UF_Field_Select_Term.php:72 ../classes/UF_Field_Set.php:151
+msgid "Output Type"
+msgstr "Ausgabetyp"
+
+#: ../classes/UF_Field_File.php:143
+msgid "A link to the file"
+msgstr "Ein Link zur Datei"
+
+#: ../classes/UF_Field_File.php:144
+msgid "The URL of the file"
+msgstr "Die URL der Datei"
+
+#: ../classes/UF_Field_File.php:145
+msgid "The ID of the file"
+msgstr "Die ID der Datei"
+
+#: ../classes/UF_Field_Radio.php:2
+msgid "Radio"
+msgstr "Radio-Button"
+
+#: ../classes/UF_Field_Radio.php:5
+msgid "This radio has no options."
+msgstr "Dieser Radio-Button hat keine Optionen"
+
+#: ../classes/UF_Field_Radio.php:35
+msgid "Displays single-choise select by using radio inputs."
+msgstr "Zeigt eine einfache Auswahl unter Verwendung von Radio-Buttons"
+
+#: ../classes/UF_Field_Repeater.php:461
+#, php-format
+msgid ""
+"Error: Trying to register a field with the %s key twice in a repeater group!"
+msgstr ""
+"Fehler: Versuch, ein Feld mit dem Schlüssel %s zweimal innerhalb einer "
+"Repeater-Gruppe zu registrieren!"
+
+#: ../classes/UF_Field_Repeater.php:465
+msgid ""
+"&quot;type&quot; is a reserved key in repeaters and cannot be overwritten!"
+msgstr ""
+"&quot;type&quot; ist ein reserviertes Schlüsselwort in Repeatern und kann "
+"nicht überschrieben werden."
+
+#: ../classes/UF_Field_Richtext.php:2
+msgid "Rich Text Editor"
+msgstr "Rich Text Editor"
+
+#: ../classes/UF_Field_Richtext.php:67
+msgid "Enables input through the WYSIWYG editor."
+msgstr "Erlaubt die Eingabe durch den WordPress WYSIWYG Editor"
+
+#: ../classes/UF_Field_Select.php:32
+msgid "This select has no options."
+msgstr "Dieses Select-Feld hat keine Optionen"
+
+#: ../classes/UF_Field_Select.php:58
+#, php-format
+msgid "#%d: [No Title]"
+msgstr "#%d: [Kein Titel]"
+
+#: ../classes/UF_Field_Select.php:82
+msgid "Displays a drop-down with predefined options."
+msgstr "Zeigt eine Drop-Down-Auswahl mit vordefinierten Optionen"
+
+#: ../classes/UF_Field_Select.php:105
+msgid "Values Source"
+msgstr "Werte Quelle"
+
+#: ../classes/UF_Field_Select.php:107
+msgid "Manually Entered"
+msgstr "Manuell eingegeben"
+
+#: ../classes/UF_Field_Select.php:108
+msgid "Automatically add pages/posts"
+msgstr "Seiten / Beiträge automatisch hinzufügen"
+
+#: ../classes/UF_Field_Select.php:110
+msgid "Options"
+msgstr "Optionen"
+
+#: ../classes/UF_Field_Select.php:112
+msgid "Option"
+msgstr "Option"
+
+#: ../classes/UF_Field_Select.php:113
+msgid "Value"
+msgstr "Wert"
+
+#: ../classes/UF_Field_Select.php:114
+msgid "Key"
+msgstr "Schlüssel"
+
+#: ../classes/UF_Field_Select.php:116
+msgid "Post Type"
+msgstr "Post Typ"
+
+#: ../classes/UF_Field_Select.php:118
+msgid ""
+"If you&apos;ve choosen &quot;Automatically add pages/posts&quot; above, "
+"please choose the required post type."
+msgstr ""
+"Wenn Sie &quot;Autmatisch Seiten / Beiträge hinzufügen&quot; ausgewählt "
+"haben, wählen Sie hier bitte den benötigten Post-Type."
+
+#: ../classes/UF_Field_Select.php:120
+msgid "jQuery Enchanced"
+msgstr "jQuery unterstützt"
+
+#: ../classes/UF_Field_Select.php:124 ../classes/UF_Field_Set.php:156
+msgid "Output Item"
+msgstr "Feldausgabe"
+
+#: ../classes/UF_Field_Select.php:126 ../classes/UF_Field_Set.php:158
+msgid "Output the value of the select, the way it is saved"
+msgstr "Gibt den Wert der Auswahl so aus, wie er gespeichert wurde"
+
+#: ../classes/UF_Field_Select.php:127 ../classes/UF_Field_Set.php:159
+msgid "Output the label of the selected value"
+msgstr "Gibt die Beschreibung des gewählten Wertes aus"
+
+#: ../classes/UF_Field_Select_Page.php:2
+msgid "Select Page"
+msgstr "Seite auswählen"
+
+#: ../classes/UF_Field_Select_Page.php:36
+msgid "Displays a hierarchical drop-down with pages."
+msgstr "Zeigt ein hierarchisches Dropdown-Feld mit Seiten"
+
+#: ../classes/UF_Field_Select_Page.php:50
+msgid "Show the page ID, which is the value of the field."
+msgstr "Zeige die ID der Seite, dies ist auch der Wert des Feldes"
+
+#: ../classes/UF_Field_Select_Page.php:51
+msgid "Show the title of the page."
+msgstr "Zeige den Seitentitel"
+
+#: ../classes/UF_Field_Select_Page.php:52
+msgid "Show a link to the page."
+msgstr "Zeige einen Link zur Seite"
+
+#: ../classes/UF_Field_Select_Page.php:53
+msgid "Show the URL of the page."
+msgstr "Zeige die URL der Seite"
+
+#: ../classes/UF_Field_Select_Term.php:5
+msgid "Select Term"
+msgstr "Begriff auswählen"
+
+#: ../classes/UF_Field_Select_Term.php:11
+msgid ""
+"<strong>UF_Field_Select_Term</strong>: Invalid taxonomy! Please check if "
+"you've spelled the name of the taxonomy correctly and that the taxonomy is "
+"already registered!"
+msgstr ""
+"<strong>UF_Field_Select_Term</strong>: Ungültige Taxonomie! bitte überprüfen "
+"Sie die Schreibweide der Taxonomie und stellen Sie sicher, dass diese "
+"Taxonomie bereits registriert ist!"
+
+#: ../classes/UF_Field_Select_Term.php:52
+msgid "Displays a drop-down with all available terms from a taxonomy."
+msgstr ""
+"Zeigt eine Drop-Down-Auswahl mit allen verfügbaren Begriffen einer Taxonomie."
+
+#: ../classes/UF_Field_Select_Term.php:68
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: ../classes/UF_Field_Select_Term.php:74
+msgid "A link to the chosen term"
+msgstr "Ein Link zum gewählten Begriff"
+
+#: ../classes/UF_Field_Select_Term.php:75
+msgid "The URL of the chosen term"
+msgstr "Die URL des gweählten Begriffes"
+
+#: ../classes/UF_Field_Select_Term.php:76
+msgid "The name of the chosen term"
+msgstr "Der Name des gewählten Begriffes"
+
+#: ../classes/UF_Field_Select_Term.php:77
+msgid "The ID of the chosen term"
+msgstr "Die ID des gewählten Begriffes"
+
+#: ../classes/UF_Field_Separator.php:5
+msgid "Heading"
+msgstr "Überschrift"
+
+#: ../classes/UF_Field_Separator.php:22 ../settings/interface/meta.php:48
+#: ../settings/interface/meta.php:106 ../settings/interface/post-type.php:101
+msgid "Title"
+msgstr "Titel"
+
+#: ../classes/UF_Field_Separator.php:24
+msgid "This title will separate different kinds of content."
+msgstr "Dieser Titel trennt verschiedene Inhaltbereiche"
+
+#: ../classes/UF_Field_Separator.php:28
+msgid ""
+"This text will appear under the title and may be used to give users "
+"directions what to do."
+msgstr ""
+"Dieser Text erscheint unter dem Titel und kann z.B. verwendet werden, um den "
+"Usern Hinweise zur Bedeutung der nachfolgenden Felder zu geben."
+
+#: ../classes/UF_Field_Separator.php:40
+msgid "Separates groups of fields with different purposes."
+msgstr "Separate Feldgruppen mit unterschiedlichen Aufgaben"
+
+#: ../classes/UF_Field_Set.php:5
+msgid "Set"
+msgstr "Einstellen"
+
+#: ../classes/UF_Field_Set.php:130
+msgid "Displays multiple checkboxes, optionally sortable."
+msgstr "Erstellt multiple Checkboxen, optional sortierbar"
+
+#: ../classes/UF_Field_Set.php:147
+msgid "Sortable"
+msgstr "Sortierbar"
+
+#: ../classes/UF_Field_Set.php:148
+msgid "If checked, the user will be able to change the order of the options."
+msgstr ""
+"Wenn diese Checkbox angehakt ist, wird der User in der Lage sein, die "
+"Reihenfolge der Optionen zu ändern."
+
+#: ../classes/UF_Field_Set.php:153
+msgid "Unordered List"
+msgstr "Ungeordnete Liste"
+
+#: ../classes/UF_Field_Set.php:154
+msgid "A single line, joined with commas."
+msgstr "Eine Zeile, verbunden durch Kommatas."
+
+#: ../classes/UF_Field_Text.php:29
+msgid "Displays a text input with optional autocomplete suggestions."
+msgstr "Erstellt ein Textfeld mit optionalen Autocomplete-Vorschlägen."
+
+#: ../classes/UF_Field_Text.php:39
+msgid "Autocomplete Suggestions"
+msgstr "Vorschläge für das Autocomplete"
+
+#: ../classes/UF_Field_Text.php:40
+msgid "You may list predefined values here. One value per row."
+msgstr "Sie können vordefinierte Werte hier auflisten. Ein Wert pro Zeile."
+
+#: ../classes/UF_Field_Text.php:44
+msgid "Format Value"
+msgstr "Wert formatieren"
+
+#: ../classes/UF_Field_Text.php:46 ../settings/interface/post-type.php:151
+msgid "None"
+msgstr "Keine"
+
+#: ../classes/UF_Field_Text.php:47
+msgid "HTML Entities"
+msgstr "HTML Entities"
+
+#: ../classes/UF_Field_Textarea.php:2
+msgid "Textarea"
+msgstr "Textarea"
+
+#: ../classes/UF_Field_Textarea.php:22
+msgid "Displays a basic text area with adjustable number of rows."
+msgstr "Zeigt eine einfache Textarea mit einer einstellbaren Anzahl an Zeilen."
+
+#: ../classes/UF_Field_Textarea.php:32
+msgid "Rows"
+msgstr "Reihen"
+
+#: ../classes/UF_Field_Textarea.php:36
+msgid "Add Paragraphs"
+msgstr "Absätze hinzufügen"
+
+#: ../classes/UF_Field_Textarea.php:37
+msgid "Automatically add paragraphs and new lines."
+msgstr "Automatisch Absätze und neue Zeilen hinzufügen"
+
+#: ../classes/UF_Field_Textarea.php:38
+msgid "Apply Shortcodes"
+msgstr "Shortcodes anwenden"
+
+#: ../classes/UF_Field_Textarea.php:39
+msgid "Apply"
+msgstr "Anwenden"
+
+#: ../classes/UF_ML.php:47
+msgid ""
+"There is no multilingual plugin that UF supports being installed or "
+"activated! Such a plugin is required for multilingual functionality the "
+"active theme or a plugin. Please don't edit anything before installing a "
+"plugin!"
+msgstr ""
+"Es ist kein multilunguales Plugin installiert, welches von Ultimate Fields "
+"unterstützt wird. Ein solches Pluin ist erforderlich, um Mehrsprachigkeit im "
+"aktiven Theme oder Plugin verwenden zu können. Bitte ändern Sie nichts, "
+"bevor sie nicht ein solches Plugin installiert haben."
+
+#: ../classes/UF_Options.php:130
+msgid "Your changes were succesufully saved!"
+msgstr "Ihre Änderungen wurden erfolgreich gespeichert!"
+
+#: ../classes/UF_Postmeta.php:489 ../templates/container/error-message.php:2
+msgid ""
+"There are errors in your data. Please review the highlighted fields below!"
+msgstr ""
+"Es sind fehler in Ihren Daten aufgetreten. Bitte überprüfen Sie die "
+"markierten Felder!"
+
+#: ../common/common.php:26
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: ../common/common.php:27
+msgid "There was an error while trying to save your data. Please try again."
+msgstr ""
+"Beim Speichern Ihrer Daten ist ein Fehler aufgeteren. Bitte versuchen Sie es "
+"erneut."
+
+#: ../common/common.php:28
+msgid "Select Image"
+msgstr "Bild auswählen"
+
+#: ../common/common.php:29
+msgid "Select Media"
+msgstr "Datei auswählen"
+
+#: ../settings/welcome.php:24
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: ../settings/interface/export.php:16 ../settings/interface/export.php:24
+msgid "Export"
+msgstr "Exportieren"
+
+#: ../settings/interface/export.php:25
+msgid ""
+"Please go to the containers list and click the <b>Export to PHP</b> link for "
+"a specific container."
+msgstr ""
+"Bitte rufen Sie die Containerliste auf und klicken Sie dort auf den &quot;"
+"PHP exportieren&quot; Link eines Containers."
+
+#: ../settings/interface/export.php:27
+msgid "XML Export"
+msgstr "XML Export"
+
+#: ../settings/interface/export.php:28
+#, php-format
+msgid ""
+"You can export containers by using the WordPress <a href=\"%s\">Export</a> "
+"tool. The generated XML file can be imported on another site through the "
+"Import tool, just like a standard posts XML file."
+msgstr ""
+"Sie können Container mittels  WordPress <a href=\"%s\">Export</a> Tool "
+"exportieren. Die generierte XML Datei kann innerhalb einer anderen WordPress "
+"Installation durch das Import-Tool eingelesen werden, genau wie jede andere "
+"Standard-Post XML Datei."
+
+#: ../settings/interface/export.php:29
+#, php-format
+msgid ""
+"To see how this works, you can read the <a href=\"%s\">Tools Export Screen</"
+"a> article at WordPress.org"
+msgstr ""
+"Um zu lernen, wie dies funktioniert, sollten Sie den <a href=\"%s\">Tools "
+"Export Screen</a> Artikel auf WordPress.org lesen."
+
+#: ../settings/interface/export.php:83
+#, php-format
+msgid "Export \"%s\" to PHP"
+msgstr "&quot;%s&quot; nach PHP exportieren"
+
+#: ../settings/interface/export.php:90
+msgid ""
+"You can export containers to PHP and add them to your theme&apos;s files. "
+"This way when the theme is activated, you would not need to setup containers "
+"and their fields up manualy, the code will do it for you."
+msgstr ""
+"Sie können Container nach PHP exportieren und diesen Code zu Ihren Theme-"
+"Dateien hinzufügen. Wenn Ihr Theme dann aktiviert wird, ist es nicht mehr "
+"nötig, die gewünschten Container und Felder im Admin manuell einzugeben, der "
+"generierte Code erledigt das automatisch für Sie."
+
+#: ../settings/interface/export.php:91
+msgid ""
+"When a container is set-up this way, it will not appear in the list on the "
+"All Containers page!"
+msgstr ""
+"Wenn ein Container in dieser Art erstellt wurde, wird er NICHT in der Liste "
+"aller Container erscheinen!"
+
+#: ../settings/interface/export.php:92
+msgid ""
+"The code can be added anywhere in your files, just make sure it is done "
+"before the <strong>init</strong> hook. If you add it directly to your "
+"functions.php file, it is okay. Also, keep in mind that you don&apos;need "
+"Ultimate Fields to be embedded in your theme in order for this to work. The "
+"uf_setup action will not be triggered if the plugin is not active, so there "
+"will be no errors. In such cases you might want to consider adding some code "
+"to your theme, which adds a notification if the plugin is not active."
+msgstr ""
+"Der Code kann irgendwo in Ihren Dateien eingebaut werden, stelleb Sie jedoch "
+"sicher, dass er vor dem <strong>init</strong> Hook ausgeführt wird. Sollten "
+"Sie diesen Code direkt in ihre functions.php Datei einfügen, ist das völlig "
+"in Ordnung. Behalten Sie außerdem im Hinterkopf, das es nicht zwingend nötig "
+"ist, Ultimate Fields in Ihr Theme zu integrieren. Die uf_setup action wird "
+"nicht angesprochen, solange das Ultimate Fields plugin nicht aktiv ist. In "
+"diesem Falle sollten Sie aber unbedingt einen Hinweis darauf ausgeben, dass "
+"das Plugin inaktiv oder nicht installiert ist.  "
+
+#: ../settings/interface/export.php:93
+msgid ""
+"<strong>Containers in the admin have higher priority than the ones in the "
+"code!</strong> When you add this code to your functions file, if you "
+"don&apos;t delete the container from the admin, it will overwrite the one in "
+"the code."
+msgstr ""
+"<strong>Containers im Admin haben immer eine höhere Priorität als solche, "
+"die durch Code generiert wurden!</strong> Sollten Sie also Container durch "
+"generierten Code, besipielsweise in der functions.php, erstellen lassen, "
+"sollten Sie nach dem Export des Codes die Container löschen, da Änderungen "
+"an diesen andernfalls den Code überschreiben würden."
+
+#: ../settings/interface/meta.php:9 ../settings/interface/meta.php:13
+#: ../settings/interface/meta.php:245 ../settings/interface/post-type.php:103
+msgid "Fields"
+msgstr "Felder"
+
+#: ../settings/interface/meta.php:17
+msgid "Repeater"
+msgstr "Repeater"
+
+#: ../settings/interface/meta.php:18
+msgid "Enables repeateable field groups. Check the docs for more info."
+msgstr ""
+"Ermöglicht wiederholbare Feldgruppen. Konsultieren Sie die Dokumentation des "
+"Plugins für weitere Informationen. "
+
+#: ../settings/interface/meta.php:27
+msgid "Repeater Fields"
+msgstr "Repeater Felder"
+
+#: ../settings/interface/meta.php:28
+msgid "Group"
+msgstr "Gruppe"
+
+#: ../settings/interface/meta.php:44
+msgid "Tab Start"
+msgstr "Tab Start"
+
+#: ../settings/interface/meta.php:45
+msgid "Adds a tab to the container. Not available in widgets."
+msgstr "Fügt einen Tab in den Container ein. Nicht verfügbar in Widgets."
+
+#: ../settings/interface/meta.php:50
+msgid "Icon Type"
+msgstr "Icon Typ"
+
+#: ../settings/interface/meta.php:52
+msgid "Image"
+msgstr "Bild"
+
+#: ../settings/interface/meta.php:53
+msgid "Font Icon"
+msgstr "Font Icon"
+
+#: ../settings/interface/meta.php:55
+msgid "Icon"
+msgstr "Icon"
+
+#: ../settings/interface/meta.php:57
+msgid "CSS Class"
+msgstr "CSS Klasse"
+
+#: ../settings/interface/meta.php:59
+msgid ""
+"You can enter the CSS class of the icon here. You could use a <a href="
+"\"http://fontawesome.io/icons/\">FontAwesome</a>, <a href=\"https://github."
+"com/melchoyce/dashicons\">Dashicons</a> or a custom font CSS class. "
+"<strong>Example:</strong> dashicons dashicons-align-none"
+msgstr ""
+"Sie können hier die CSS Klasse des Icons eingeben. Verwenden Sie entweder <a "
+"href=\"http://fontawesome.io/icons/\">FontAwesome</a>, <a href=\"https://"
+"github.com/melchoyce/dashicons\">Dashicons</a> oder eine CSS Klasse eines "
+"eigenen Icons. <strong>Beispiel:</strong> dashicons dashicons-align-none"
+
+#: ../settings/interface/meta.php:71
+msgid "Container Settings"
+msgstr "Container-Einstellungen"
+
+#: ../settings/interface/meta.php:108
+msgid ""
+"The title is the key element of a container. It will appear in the menu for "
+"options pages, as a box heading for widgets and post meta."
+msgstr ""
+"Der Titel ist das wichtigste Element eines Containers. Er erscheint "
+"beispielsweise im Menu für Optionsseiten, als Überschrift für ein Widget "
+"oder als Überschrift der Post-Meta Daten."
+
+#: ../settings/interface/meta.php:111
+msgid ""
+"The description is optional and will appear in the beginning of a container."
+msgstr "Die Beschreibung ist optional unt erscheint zu Beginn des Containers."
+
+#: ../settings/interface/meta.php:113 ../settings/interface/post-type.php:102
+msgid "Type"
+msgstr "Typ"
+
+#: ../settings/interface/meta.php:115 ../settings/interface/post-type.php:141
+msgid "Options Page"
+msgstr "Optionsseite"
+
+#: ../settings/interface/meta.php:116
+msgid "Post Meta Box"
+msgstr "Post Meta Box"
+
+#: ../settings/interface/meta.php:124
+msgid "Show page"
+msgstr "Seite anzeigen"
+
+#: ../settings/interface/meta.php:126
+msgid "In the Main Menu"
+msgstr "Als Top-Level Menupunkt"
+
+#: ../settings/interface/meta.php:127
+msgid "Under the Settings tab"
+msgstr "Unter Einstellungen"
+
+#: ../settings/interface/meta.php:128
+msgid "Under the Appearance tab"
+msgstr "Unter Design"
+
+#: ../settings/interface/meta.php:129
+msgid "Under the Tools Tab"
+msgstr "Unter Werkzeuge"
+
+#: ../settings/interface/meta.php:130
+msgid "Under another Ultimate Fields page."
+msgstr "Unter einer anderen Ultimate Fields Seite."
+
+#: ../settings/interface/meta.php:131
+msgid "Under another page, specified by slug"
+msgstr "Unter einer anderen Seite, benannt durch Slug"
+
+#: ../settings/interface/meta.php:134
+msgid "Parent Page"
+msgstr "Übergeordnete Seite"
+
+#: ../settings/interface/meta.php:137
+msgid ""
+"Right now, there are no top level Ultimate Fields options pages. Until you "
+"add a top level page, this page will be displayed under in main menu."
+msgstr ""
+"Im Augenblick gibt es keine Ultimate Fields Optionsseiten als Top-Level "
+"Menu. Bis Sie eine solche Seite anlegen, wird diese Seite als Top-Level Menu "
+"angezeigt."
+
+#: ../settings/interface/meta.php:139
+msgid "Parent Page Slug"
+msgstr "Slug der übergeordneten Seite"
+
+#: ../settings/interface/meta.php:142
+msgid "Slug"
+msgstr "Slug"
+
+#: ../settings/interface/meta.php:143
+msgid ""
+"<strong>Required if the container has multilingual title!</strong> The ID of "
+"the container is neccessary if you want a specific slug for the page. If you "
+"leave this empty, the slug will be generated from the title. If the "
+"container has a multilignaul title though, you need to set this, because not "
+"all languages might work as slugs."
+msgstr ""
+"<strong>Wird benötigt, wenn der Container einen multilingualen Titel hat!</"
+"strong> Die ID des Containers ist erforderlich, wenn Sie einen speziellen "
+"Slug für diese Seite brauchen.  Wenn Sie dieses Feld leer lassen, wird der "
+"Slug aus dem Containertitel generiert. Sollte der Container einen "
+"multilingualen Titel haben, so sollten Sie hier unbedingt etwas eintragen, "
+"denn nicht alle Sprachen eignen sich als Slugs."
+
+#: ../settings/interface/meta.php:145
+msgid "Menu Icon"
+msgstr "Menu Icon"
+
+#: ../settings/interface/meta.php:148
+msgid "Top level pages might use a custom icon."
+msgstr "Top -Level Menupunkte können ein eigenes Icon verwenden "
+
+#: ../settings/interface/meta.php:149
+msgid "Menu Position"
+msgstr "Menuposition"
+
+#: ../settings/interface/meta.php:153
+msgid ""
+"Be careful with this setting, because you might silently overwrite another "
+"item&apos;s icon as WordPress does not check if there is anything at the "
+"particular position."
+msgstr ""
+"Vorsicht mit dieser Einstellung. Sie könnten eventuell das Icon eines "
+"anderen Menupunktes überschreiben, da WordPress nicht überprüft, ob sich an "
+"der angegebenen Position bereits ein Eintrag befindet."
+
+#: ../settings/interface/meta.php:176
+msgid "Default"
+msgstr "Standard"
+
+#: ../settings/interface/meta.php:188
+msgid "Show on post types"
+msgstr "Nur bei folgenden Post-Types anzeigen"
+
+#: ../settings/interface/meta.php:191
+msgid "Show on page templates:"
+msgstr "Nur auf folgenden Seitentemplates anzeigen:"
+
+#: ../settings/interface/meta.php:195
+msgid ""
+"The box will only appear on the checked templates, if any. If none are "
+"checked, the container will appear on all pages."
+msgstr ""
+"Die Box  wird nur bei den ausgewählten Seitentemplates sichtbar sein, falls "
+"Templates ausgewählt sind. Wenn keine Templates gewählt sind, wird der "
+"Container auf allen Seiten sichtbar sein."
+
+#: ../settings/interface/meta.php:196
+msgid "Levels"
+msgstr "Stufen"
+
+#: ../settings/interface/meta.php:199
+msgid ""
+"On hierarchical post types, the box will only be visible on the selected "
+"levels. Leave 0 for all levels"
+msgstr ""
+"Bei hierarchischen Post-Types wird die Box nur in den ausgewählten Stufen "
+"sichtbar sein. Lassen Sie diesen Wert bei 0 für alle Stufen."
+
+#: ../settings/interface/meta.php:216
+#, php-format
+msgid "%s terms"
+msgstr "%s Schlagworte"
+
+#: ../settings/interface/meta.php:237
+#: ../settings/interface/settings-page.php:39
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../settings/interface/meta.php:271
+#: ../templates/container/options-page.php:24
+msgid "Save"
+msgstr "Speichern"
+
+#: ../settings/interface/post-type.php:18
+#: ../settings/interface/post-type.php:30
+msgid "Ultimate Fields"
+msgstr "Ultimate Fields"
+
+#: ../settings/interface/post-type.php:19
+msgid "Container"
+msgstr "Container"
+
+#: ../settings/interface/post-type.php:20
+msgid "Add New"
+msgstr "Erstellen"
+
+#: ../settings/interface/post-type.php:21
+msgid "Add New Container"
+msgstr "Neuen Container erstellen"
+
+#: ../settings/interface/post-type.php:22
+msgid "Edit Container"
+msgstr "Container bearbeiten"
+
+#: ../settings/interface/post-type.php:23
+msgid "New Container"
+msgstr "Neuer Container"
+
+#: ../settings/interface/post-type.php:24
+msgid "All Containers"
+msgstr "Alle Container"
+
+#: ../settings/interface/post-type.php:25
+msgid "View Container"
+msgstr "Container anzeigen"
+
+#: ../settings/interface/post-type.php:26
+msgid "Search Containers"
+msgstr "Suche Container"
+
+#: ../settings/interface/post-type.php:27
+msgid "No Containers found"
+msgstr "Keine Container gefunden"
+
+#: ../settings/interface/post-type.php:28
+msgid "No Containers found in Trash"
+msgstr "Keine Container im Papierkorb gefunden"
+
+#: ../settings/interface/post-type.php:142
+msgid "Post Meta"
+msgstr "Post Meta"
+
+#: ../settings/interface/post-type.php:188
+msgid "Export PHP code"
+msgstr "PHP Code exportieren"
+
+#: ../settings/interface/post-type.php:212
+msgid "Container saved."
+msgstr "Container gespeichert."
+
+#: ../settings/interface/settings-page.php:10
+msgid "Multilingual Fields"
+msgstr "Mehrsprachige Felder"
+
+#: ../settings/interface/settings-page.php:11
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: ../settings/interface/settings-page.php:12
+msgid ""
+"This plugin is compatible with qTranslate, which is a WordPress multilingual "
+"plugin. If you enable the multilingual fields and you use qTranslate, we "
+"will automatically get the available languages and display two field "
+"versions for each language. Please remember that each field will have "
+"it&apos;s own setting and you will need to use it in order to make it "
+"multilingual."
+msgstr ""
+"Dieses Plugin ist kompatibel mit qTranslate, einem WordPress multilingual "
+"Plugin. Wenn Sie die multilingualen Felder aktivieren und qTranslate "
+"verwenden, wird Ultimate Fields automatisch die verwendeten Sprahcne "
+"erkennen und eine Feld-Version für jede Sprache anzeigen. Bitte beachten "
+"Sie: Jedes Feld hat dann seine eigenen Einstellungen, Sie müssen diese "
+"verwenden, damit Ihr Feld mehrsprachig nutzbar ist."
+
+#: ../settings/interface/settings-page.php:21
+msgid "Default Theme"
+msgstr "Standard Theme"
+
+#: ../settings/interface/settings-page.php:33
+msgid "Theme"
+msgstr "Theme"
+
+#: ../settings/interface/settings-page.php:40
+msgid "General"
+msgstr "Allgemein"
+
+#: ../templates/repeater/repeater-row.php:10
+msgid "Shrink"
+msgstr "Schließen"
+
+#: ../templates/repeater/repeater-row.php:11
+msgid "Expand"
+msgstr "Öffnen"
+
+#: ../templates/repeater/repeater-row.php:12
+msgid "Remove Group"
+msgstr "Gruppe entfernen"
+
+#: ../templates/repeater/repeater-row.php:15
+#: ../templates/repeater/repeater.php:34
+msgid "Click to toggle"
+msgstr "Klicken zum Öffnen/Schließen"
+
+#: ../templates/repeater/repeater-row.php:16
+#: ../templates/repeater/repeater.php:35
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../templates/repeater/repeater.php:14
+msgid "Drag an item here to add data"
+msgstr "Ziehen Sie ein Feld hierher, um Daten hinzuzufügen"
+
+#: ../templates/repeater/repeater.php:16
+msgid "Please click the &quot;Add&quot; Button to add data."
+msgstr ""
+"Bitte klicken Sie auf den &quot;Hinzufügen&quot; Button, um Daten "
+"hinzuzfügen."
+
+#: ../templates/repeater/repeater.php:23 ../templates/repeater/repeater.php:26
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: ../templates/repeater/repeater.php:26
+msgid "Drag & Drop into the area above"
+msgstr "Ziehen Sie ein Feld in den oberen Bereich"
+
+#: ../templates/repeater/repeater.php:33
+msgid "Click to add"
+msgstr "Hinzufügen durch Klick"
+
+#~ msgid "Error: Trying to register a terms meta field with the %s key twice!"
+#~ msgstr ""
+#~ "Грешка: Опит за повторна регистрация на поле за мета информация на "
+#~ "термини с ключ %s!"
+
+#~ msgid "Error: Trying to register a user meta field with the %s key twice!"
+#~ msgstr ""
+#~ "Грешка: Опит за повторна регистрация на поле за мета информация на "
+#~ "потребители с ключ %s!"
+
+#~ msgid "Audio"
+#~ msgstr "Звук"
+
+#~ msgid "An audio player"
+#~ msgstr "Аудио Плеър"
+
+#~ msgid "The ID of the attachment"
+#~ msgstr "Идентификатор на файла"
+
+#~ msgid "Color Picker"
+#~ msgstr "Цветова Палитра"
+
+#~ msgid "Date Picker"
+#~ msgstr "Избор на дата"
+
+#~ msgid "Displays a standard jQuery UI datepicker."
+#~ msgstr "Извежда стандартно поле за избор на дата от jQuery UI."
+
+#~ msgid "Date Format"
+#~ msgstr "Формат на Датата"
+
+#~ msgid "Gallery"
+#~ msgstr "Галерия"
+
+#~ msgid "Full"
+#~ msgstr "Пълен"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Миниатюрен"
+
+#~ msgid "Medium"
+#~ msgstr "Среден"
+
+#~ msgid "Large"
+#~ msgstr "Голям"
+
+#~ msgid "A full image tag"
+#~ msgstr "Цял img таг (Цяло изображение)"
+
+#~ msgid "The URL of the image"
+#~ msgstr "Адрес (URL) на изображението"
+
+#~ msgid "Image Size"
+#~ msgstr "Размер на изображението"
+
+#~ msgid "Image Select"
+#~ msgstr "Избор чрез изображение"
+
+#~ msgid "Map"
+#~ msgstr "Карта"
+
+#~ msgid "Locate on map"
+#~ msgstr "Намери на картата"
+
+#~ msgid "Enter address and click the find button..."
+#~ msgstr "Въведете адрес и кликнете лупата отстрани."
+
+#~ msgid "Height"
+#~ msgstr "Височина"
+
+#~ msgid "Allow Adding"
+#~ msgstr "Разреши добавяне"
+
+#~ msgid "Allow"
+#~ msgstr "Разреши"
+
+#~ msgid "Tags"
+#~ msgstr "Етикети"
+
+#~ msgid "Displays a multiple-choise select, similar to tags."
+#~ msgstr "Показва поле за избор на много стойности, подобно на етикети."
+
+#~ msgid "Output the value of the tag, the way it is saved"
+#~ msgstr "Извеждане на стойността на етикетът, както е записан."
+
+#~ msgid "Output the label of the selected tag"
+#~ msgstr "Извеждане на заглавието на етикетът, както е записан."
+
+#~ msgid "Terms Meta"
+#~ msgstr "Мета информация за термини"
+
+#~ msgid "User Meta"
+#~ msgstr "Мета информация за потребители"
+
+#~ msgid "Widget"
+#~ msgstr "Джаджа"
+
+#~ msgid "Taxonomies"
+#~ msgstr "Таксономии"
+
+#~ msgid "The container will only appear on the checked taxonomies."
+#~ msgstr "Контейнерът ще бъде показан само на избраните таксономии."
+
+#~ msgid "Template Source"
+#~ msgstr "Източник на шаблона"
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"
+
+#~ msgid "Callback Function"
+#~ msgstr "Обработваща функция"
+
+#~ msgid ""
+#~ "This function will be called when the widget is displayed. It will "
+#~ "receive two arguments: $args, which are the arguments of the sidebar it "
+#~ "is in and $instance, which will contain the values for the particular "
+#~ "widget. You can place this function anywhere in your code, as long as it "
+#~ "is declared before trying to display the widget."
+#~ msgstr ""
+#~ "Тази функция ще бъде извикана когато джаджата се показва. Тя ще получи "
+#~ "два аргумента: $args, които са аргументите на зоната за джаджи и "
+#~ "$instance, който съдържа стойностите на конкретният уиджет. Можете да "
+#~ "поставите тази функция навсякъде в кода си, стига да бъде декларирана "
+#~ "преди да се покаже добавката."
+
+#~ msgid "All"
+#~ msgstr "Всички"
+
+#~ msgid "Role"
+#~ msgstr "Роля"
+
+#~ msgid "The container will only be shown on the specified roles."
+#~ msgstr ""
+#~ "Контейнерът ще бъде видим само за потребители, които имат избраната роля."
+
+#~ msgid "Move to Trash"
+#~ msgstr "Премести в кошчето"
+
+#~ msgid "Types"
+#~ msgstr "Типове"
+
+#~ msgid "Term Meta"
+#~ msgstr "Мета информация на термин"
+
+#~ msgid "Add Field"
+#~ msgstr "Добави Поле"
+
+#~ msgid "Add Field Value"
+#~ msgstr "Добави стойността на поле"
+
+#~ msgid "Insert Ultimate Fields Field"
+#~ msgstr "Вмъкни поле от Ultimate Fields"
+
+#~ msgid ""
+#~ "The field will be inserted as a shortcode and it will be replaced with "
+#~ "it&apos;s value."
+#~ msgstr ""
+#~ "Полето ще бъде вмъкнато като шорткод и ще бъде заместено със стойността "
+#~ "му."
+
+#~ msgid "Field"
+#~ msgstr "Поле"
+
+#~ msgid "Item"
+#~ msgstr "Елемент"
+
+#~ msgid "There are no items that are associated with the chosen field."
+#~ msgstr "Няма елементи, които са асоциирани с избраното поле."
+
+#~ msgid "Insert"
+#~ msgstr "Вмъкни"
+
+#~ msgid "-- Current Post --"
+#~ msgstr "-- Сегашният Пост --"
+
+#~ msgid "(no title)"
+#~ msgstr "(няма заглавие)"
+
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#~ msgid "New Sidebar"
+#~ msgstr "Нова зона за джаджи."
+
+#~ msgid "Edit %s"
+#~ msgstr "Промени %s"
+
+#~ msgid ""
+#~ "Changes made in this modal cannot be undone. Nothing will be saved until "
+#~ "you save the page."
+#~ msgstr ""
+#~ "Промените направени в този прозорец не могат да бъдат отменени. Въпреки "
+#~ "това нищо няма да бъде записано докато не запишете страницата."
