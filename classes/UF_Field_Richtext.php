@@ -35,7 +35,6 @@ class UF_Field_Richtext extends UF_Field_Textarea {
 		global $wp_version;
 		if( version_compare( $wp_version, '3.8.2', '>' ) ) {
 			echo '<div id="wp-' . $this->mce_id . '-wrap" class="wp-core-ui wp-editor-wrap tmce-active" data-mce-id="' . $this->mce_id . '">
-				<link rel="stylesheet" id="editor-buttons-css"  href="http://mac.int/fields/playground/wp-includes/css/editor.min.css?ver=3.9-RC1" type="text/css" media="all" />
 				<div id="wp-' . $this->mce_id . '-editor-tools" class="wp-editor-tools hide-if-no-js">
 					<div id="wp-' . $this->mce_id . '-media-buttons" class="wp-media-buttons">' . $media_buttons . '</div>
 
