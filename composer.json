@@ -1,5 +1,5 @@
 {
-    "name": "entr/ultimate-fields-unofficial",
+    "name": "wptailor/ultimate-fields-unofficial",
     "description": "With Ultimate Fields you can easily create fields in the admin. Those fields can be displayed when you are editing a post or page (any post type actually) or in an options page (ex. Theme Options) anywhere in the admin.",
     "type": "wordpress-plugin",
     "license": "GPL2+",
