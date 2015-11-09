@@ -72,7 +72,7 @@
 		init: function() {
 			// Allow additional fields
 			$( document ).trigger( 'uf_extend', UF );
-			
+
 			// Add dependencies if available
 			if( typeof( UF_Dependencies ) != 'undefined' ) {
 				UF.addDependencies( UF_Dependencies );
@@ -275,7 +275,7 @@
 
 		// Selects an existing file by ID
 		selectFile: function() {
-			var selection = media.frame.state().get( 'selection' );			
+			var selection = media.frame.state().get( 'selection' );
 			attachment = wp.media.attachment( media.options.selected );
 			attachment.fetch();
 			selection.add( attachment ? [ attachment ] : [] );
@@ -310,7 +310,7 @@
 
 			// Get class words
 			words = node.className.replace( /^.*uf-field-([^ ]+).*$/i, '$1' ).split( '-' );
-			
+
 			// Join uppercase words to form the class
 			theClass = '';
 			for( i in words ) {
@@ -356,7 +356,7 @@
 				// Add static methods and properties
 				if( UF.isset( staticProps ) ) {
 					_.extend( Field[ type ], staticProps );
-				} 
+				}
 
 				// Add the ability for the field to be inherited
 				Field[ type ].extend = function( subType, subProto, subStatic ) {
@@ -580,7 +580,7 @@
 				valid = this.validationRule.test( this.value );
 			}
 
-			return valid; 
+			return valid;
 		},
 
 		// Add an event listener
@@ -894,7 +894,7 @@
 
 			// Save the value internally
 			this.values[ field.id ] = value;
-			
+
 			// For sub-classes do something based on this value
 			if( typeof( this.afterValueChanged ) == 'function' ) {
 				this.afterValueChanged( field, value );
@@ -924,7 +924,7 @@
 					visible = true;
 				}
 			}
-			
+
 			field.row[ visible ? 'show' : 'hide' ]();
 		},
 
@@ -986,7 +986,7 @@
 									valid = true;
 							}
 						} else {
-							valid = goodValue.indexOf( currentValue ) != -1;							
+							valid = goodValue.indexOf( currentValue ) != -1;
 						}
 						break;
 					case 'NOT_IN':
@@ -998,7 +998,7 @@
 									valid = true;
 							}
 						} else {
-							valid = goodValue.indexOf( currentValue ) == -1;							
+							valid = goodValue.indexOf( currentValue ) == -1;
 						}
 						break;
 					default:
@@ -1367,7 +1367,7 @@
 						valid = false;
 					}
 				}
-			}			
+			}
 
 			return valid;
 		},
@@ -1391,7 +1391,7 @@
 	// Simple text input
 	Field.extend( 'Text', {
 		// Initial constructor
-		initialize: function() {			
+		initialize: function() {
 			// Hold autocomplete suggestions
 			this.suggestions = [];
 
@@ -1431,11 +1431,11 @@
 		},
 
 		// Initialize the autocomplete functionality
-		initAutocomplete: function() {	
+		initAutocomplete: function() {
 			this.prepareSuggestions();
 			// If there are suggestions, initialize jQUery UI Autocomplete
 			if( this.suggestions.length ) {
-				this.autocomplete();	
+				this.autocomplete();
 			}
 		}
 	});
@@ -1500,138 +1500,138 @@
 	});
 
 	// Richtext field
-	Field.extend( 'Richtext', {
-		initialize: function() {
-			var field = this;
+	// Field.extend( 'Richtext', {
+	// 	initialize: function() {
+	// 		var field = this;
 
-			// This will hold all editors
-			this.editors = [];
+	// 		// This will hold all editors
+	// 		this.editors = [];
 
-			// Collect all editors
-			this.input.each(function(){
-				var $t = $(this);
+	// 		// Collect all editors
+	// 		this.input.each(function(){
+	// 			var $t = $(this);
 
-				// Collect each editor's data
-				field.editors.push({
-					// The HTML container of the editor
-					$container: $t,
+	// 			// Collect each editor's data
+	// 			field.editors.push({
+	// 				// The HTML container of the editor
+	// 				$container: $t,
 
-					// The code that's the backbone when initializing the editor
-					originalCode: $t.parent().html(),
+	// 				// The code that's the backbone when initializing the editor
+	// 				originalCode: $t.parent().html(),
 
-					// ID of the new editor
-					id: ('UFFieldRichtext' + (Field.Richtext.i++)).toLowerCase(),
+	// 				// ID of the new editor
+	// 				id: ('UFFieldRichtext' + (Field.Richtext.i++)).toLowerCase(),
 
-					// The ID placeholder that will need to get replaced with the new ID
-					mceId: $t.data('mce-id')
-				});
-			});
+	// 				// The ID placeholder that will need to get replaced with the new ID
+	// 				mceId: $t.data('mce-id')
+	// 			});
+	// 		});
 
-			// Initialize all editors
-			this.initEditors();
-		},
+	// 		// Initialize all editors
+	// 		this.initEditors();
+	// 	},
 
-		// Initialize all editors
-		initEditors: function() {
-			for( i in this.editors ) {
-				// Add the porper ids to the code and trigger tinyMCE
-				this.initEditor( this.editors[i] );
-			}
-		},
+	// 	// Initialize all editors
+	// 	initEditors: function() {
+	// 		for( i in this.editors ) {
+	// 			// Add the porper ids to the code and trigger tinyMCE
+	// 			this.initEditor( this.editors[i] );
+	// 		}
+	// 	},
 
-		// Initialize a single editor
-		initEditor: function( editor ) {
-			var field = this, $parent;
+	// 	// Initialize a single editor
+	// 	initEditor: function( editor ) {
+	// 		var field = this, $parent;
 
-			// Save the parent
-			$parent = editor.$container.parent();
+	// 		// Save the parent
+	// 		$parent = editor.$container.parent();
 
-			// Get the code for the editor and add the proper ID
-			$parent.html( editor.originalCode.replace(new RegExp( editor.mceId, 'gi' ), editor.id ) );
+	// 		// Get the code for the editor and add the proper ID
+	// 		$parent.html( editor.originalCode.replace(new RegExp( editor.mceId, 'gi' ), editor.id ) );
 
-			// Restore the container
-			editor.$container = $parent.children();
+	// 		// Restore the container
+	// 		editor.$container = $parent.children();
 
-			// Initialize the editor
-			this.initMce( editor.id );
+	// 		// Initialize the editor
+	// 		this.initMce( editor.id );
 
-			// Bind regeneration
-			this.row.on( 'uf-sorted', function() {
-				field.regenerate( editor );
-			});
+	// 		// Bind regeneration
+	// 		this.row.on( 'uf-sorted', function() {
+	// 			field.regenerate( editor );
+	// 		});
 
-			// Bind saving - what's in the editor is not always in the textarea
-			this.row.on( 'uf-before-save', function() {
-				field.value = field.getValue( editor );
-				wpActiveEditor = null;
-			});
-		},
+	// 		// Bind saving - what's in the editor is not always in the textarea
+	// 		this.row.on( 'uf-before-save', function() {
+	// 			field.value = field.getValue( editor );
+	// 			wpActiveEditor = null;
+	// 		});
+	// 	},
 
-		// Upon DOM movement, regenerates the editor
-		regenerate: function( editor ) {
-			var $parent, value;
+	// 	// Upon DOM movement, regenerates the editor
+	// 	regenerate: function( editor ) {
+	// 		var $parent, value;
 
-			// Get the current value
-			value = this.getValue( editor );
+	// 		// Get the current value
+	// 		value = this.getValue( editor );
 
-			// Get the parent
-			$parent = $( editor.$container.parent() );
+	// 		// Get the parent
+	// 		$parent = $( editor.$container.parent() );
 
-			// Don't make the same editor
-			editor.id += 1;
+	// 		// Don't make the same editor
+	// 		editor.id += 1;
 
-			// Restore the backbone
-			$parent.html( editor.originalCode.replace(new RegExp( editor.mceId, 'gi' ), editor.id ) );
+	// 		// Restore the backbone
+	// 		$parent.html( editor.originalCode.replace(new RegExp( editor.mceId, 'gi' ), editor.id ) );
 
-			// Restore jQuery objects
-			editor.$container = $parent.children();
+	// 		// Restore jQuery objects
+	// 		editor.$container = $parent.children();
 
-			// Restore the value
-			editor.$container.find('textarea').val( value );
+	// 		// Restore the value
+	// 		editor.$container.find('textarea').val( value );
 
-			// Setup the editor
-			this.initMce( editor.id );
-			wpActiveEditor = null
-		},
+	// 		// Setup the editor
+	// 		this.initMce( editor.id );
+	// 		wpActiveEditor = null
+	// 	},
 
-		// Initialize an editor
-		initMce: function( id ) {
-			var oldId, i;
+	// 	// Initialize an editor
+	// 	initMce: function( id ) {
+	// 		var oldId, i;
 
-			// Get an existing ID
-			// This uses the last available editor's config, but we preffer uf_dummy_editor_id 
-			// for( i in tinyMCEPreInit.mceInit ) oldId = i; }
+	// 		// Get an existing ID
+	// 		// This uses the last available editor's config, but we preffer uf_dummy_editor_id
+	// 		// for( i in tinyMCEPreInit.mceInit ) oldId = i; }
 
-			// Setup the Richtext editor
-			var mceInit = $.extend({}, tinyMCEPreInit.mceInit[ 'uf_dummy_editor_id' ], { body_class: id, elements: id, rows: $('#' + id).attr('rows'), selector: '#' + id });
-			tinyMCEPreInit.mceInit[id] = $.extend({}, mceInit);
-			tinymce.init( tinyMCEPreInit.mceInit[id] );
+	// 		// Setup the Richtext editor
+	// 		var mceInit = $.extend({}, tinyMCEPreInit.mceInit[ 'uf_dummy_editor_id' ], { body_class: id, elements: id, rows: $('#' + id).attr('rows'), selector: '#' + id });
+	// 		tinyMCEPreInit.mceInit[id] = $.extend({}, mceInit);
+	// 		tinymce.init( tinyMCEPreInit.mceInit[id] );
 
-			// Setup quicktags
-			var qtInit = $.extend({}, tinyMCEPreInit.qtInit[ 'uf_dummy_editor_id' ], { id: id });
-			tinyMCEPreInit.qtInit[id] = $.extend({}, qtInit);
-			quicktags(tinyMCEPreInit.qtInit[id]);
+	// 		// Setup quicktags
+	// 		var qtInit = $.extend({}, tinyMCEPreInit.qtInit[ 'uf_dummy_editor_id' ], { id: id });
+	// 		tinyMCEPreInit.qtInit[id] = $.extend({}, qtInit);
+	// 		quicktags(tinyMCEPreInit.qtInit[id]);
 
-			// Init QuickTags
-			QTags._buttonsInit();
-		},
+	// 		// Init QuickTags
+	// 		QTags._buttonsInit();
+	// 	},
 
-		// Get the value of an editor
-		getValue: function( editor ) {
-			var value;
+	// 	// Get the value of an editor
+	// 	getValue: function( editor ) {
+	// 		var value;
 
-			if( UF.isset( tinyMCE.get( editor.id ) ) ) {
-				value = tinyMCE.get( editor.id ).getContent()
-				editor.$container.find( 'textarea' ).val( tinyMCE.get( editor.id ).getContent() );
-				return value;
-			} else {
-				return '';
-			}
-		}
-	}, {
-		// Since each editor needs a different ID, use this and increment it
-		i: 0
-	});
+	// 		if( UF.isset( tinyMCE.get( editor.id ) ) ) {
+	// 			value = tinyMCE.get( editor.id ).getContent()
+	// 			editor.$container.find( 'textarea' ).val( tinyMCE.get( editor.id ).getContent() );
+	// 			return value;
+	// 		} else {
+	// 			return '';
+	// 		}
+	// 	}
+	// }, {
+	// 	// Since each editor needs a different ID, use this and increment it
+	// 	i: 0
+	// });
 
 	// Set field
 	Field.extend( 'Set', {
@@ -1657,7 +1657,7 @@
 				update: function( event, ui ) {
 					var sort = [];
 
-					// Don't cache this selection - it has to be done with the 
+					// Don't cache this selection - it has to be done with the
 					// current DOM order
 					$fieldset.find( "input[type='checkbox']" ).each(function() {
 						sort.push( $( this ).val() );
@@ -1855,7 +1855,7 @@
 
 			// Add the last class to the last field
 			this.$fields.last().addClass( 'last' );
-			
+
 			// When everything's done, show the row (toggle it) or hide it;
 			if( this.initial ) {
 				this.element.addClass( 'closed' );
@@ -1910,7 +1910,7 @@
 			if( ! confirm( UF.Strings.sure ) ) {
 				return;
 			}
-			
+
 			// Remove the actual row
 			this.element.remove();
 
@@ -1925,7 +1925,7 @@
 			// Simply toggle the visibility class
 			if( this.element.hasClass('closed') ) {
 				this.element.removeClass( 'closed' );
-			} else {				
+			} else {
 				this.element.addClass( 'closed' );
 			}
 
@@ -1940,7 +1940,7 @@
 			if( $table.children( '.uf-field' ).size() ) {
 				return this.$fields = $table.children( '.uf-field:not(.uf-separator)' );
 			} else {
-				return this.$fields = $table.children( 'tbody' ).children( '.uf-field:not(.uf-separator)' );				
+				return this.$fields = $table.children( 'tbody' ).children( '.uf-field:not(.uf-separator)' );
 			}
 		},
 
@@ -1961,7 +1961,7 @@
 					break;
 				}
 			} else {
-				text = value;				
+				text = value;
 			}
 
 			this.$elements.title.text( text ).parent()[ text ? 'show' : 'hide' ]();
@@ -2116,9 +2116,9 @@
 			// If limits have been reached, now there's space again
 			if( this.$elements.prototypes.children().size() > 1) {
 				this.$elements.prototypes.show();
-				this.$elements.helper.show();				
+				this.$elements.helper.show();
 			} else {
-				this.$elements.addButton.show();				
+				this.$elements.addButton.show();
 			}
 		},
 
@@ -2165,9 +2165,9 @@
 				// If limits have been reached, now there's space again
 				if( this.$elements.prototypes.children().size() > 1) {
 					this.$elements.prototypes.hide();
-					this.$elements.helper.hide();				
+					this.$elements.helper.hide();
 				} else {
-					this.$elements.addButton.hide();				
+					this.$elements.addButton.hide();
 				}
 			}
 		},
